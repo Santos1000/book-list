@@ -1,11 +1,8 @@
-class Bookpolicy < ApplicationPolicy
+class BookPolicy < ApplicationPolicy
   class Scope < Scope
-    def resolve
-      scope.all
-    end
-  end
-
-  def show?
-    true
+    # NOTE: Be explicit about which records you allow access to!
+    # def resolve
+    #   scope.all
+    # end
   end
 end
