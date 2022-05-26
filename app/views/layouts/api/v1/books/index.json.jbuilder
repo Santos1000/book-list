@@ -1,3 +1,3 @@
-json.array! @restaurants do |restaurant|
-  json.extract! restaurant, :id, :name, :address
+json.array! @books do |book|
+  json.extract! book, :id, :name, :author, :category
 end

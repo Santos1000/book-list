@@ -1,7 +1,11 @@
 class Bookpolicy < ApplicationPolicy
-  class Sacope < Scope
+  class Scope < Scope
     def resolve
       scope.all
     end
+  end
+
+  def show?
+    true
   end
 end
